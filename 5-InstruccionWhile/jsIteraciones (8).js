@@ -6,9 +6,21 @@ function mostrar()
 	var negativo=1;
 	
 	var respuesta='si';
-
-
+	while(true){
+		numero = prompt("Ingrese numero y para finalizar ingrese si");
+		if(numero == "si"){
+			break;
+		}
+		contador++;
+		numero = parseInt(numero);
+		if(numero > -1){
+			positivo+= numero;
+		}else {
+			negativo*= numero; 
+		}
+	}
+}
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;
 
-}//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN}
